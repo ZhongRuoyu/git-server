@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "Hi! You've successfully authenticated, but this server does not provide shell access."
