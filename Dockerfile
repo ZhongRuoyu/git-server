@@ -12,5 +12,5 @@ COPY --chown=git git-shell-commands /home/git/git-shell-commands
 VOLUME [ "/home/git" ]
 
 COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT [ "docker-entrypoint.sh" ]
 EXPOSE 22 9418
