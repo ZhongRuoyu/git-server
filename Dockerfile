@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN \
     apt-get update && \
-    apt-get install -y git openssh-server && \
+    apt-get install -y --no-install-recommends git openssh-server && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* && \
     useradd -d /home/git -m -s /usr/bin/git-shell git && \
