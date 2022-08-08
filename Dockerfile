@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN \
     apt-get update && \
     apt-get install -y git openssh-server && \
-    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
     useradd -d /home/git -m -s /usr/bin/git-shell git && \
     su -s /bin/sh git -c ' \
     touch /home/git/.hushlogin \
